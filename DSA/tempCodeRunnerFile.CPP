@@ -1,0 +1,1 @@
+        return function(x-1) + n;

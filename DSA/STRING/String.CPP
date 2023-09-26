@@ -40,19 +40,19 @@ int validateString(char *name)
 int main()
 {
 
-    // char s[] = "MY NAME IS Mohammad Akhlak";
-    // int vowelCount = 0;
-    // int ConsoCount = 0;
-    // int words = 1;
-    // int k;
-    // cout << s << endl;
-    // // find length of string
-    // cout << "Length of string : ";
-    // for (k = 0; s[k] != '\0'; k++)
-    // {
-    // }
-    // // printf("%d ", i);
-    // cout << k << endl;
+    char s[] = "MY NAME IS Mohammad Akhlak";
+    int vowelCount = 0;
+    int ConsoCount = 0;
+    int words = 1;
+    int k;
+    cout << s << endl;
+    // find length of string
+    cout << "Length of string : ";
+    for (k = 0; s[k] != '\0'; k++)
+    {
+    }
+    // printf("%d ", i);
+    cout << k << endl;
     // // find number of vowel and consonent
     // cout << "Total vowel in given string : ";
     // for (int i = 0; s[i] != '\0'; i++)
@@ -196,22 +196,26 @@ int main()
 
     // Finding Duplicates in string
 
-    // // duplicates using hast table
-    // char dup[] = "finding";
-    // int H[26];
-    // int i, j;
+    char a[] = "finding";
+    int H[26], i;
 
-    // for (i = 0; dup[i] != '\0'; i++)
-    // {
-    //     H[dup[i] - 97] += 1;
-    // }
-    // for (j = 0; j < 26; j++)
-    // {
-    //     if (H[j] > 1)
-    //     {
-    //         cout << j + 97 << " -> " << H[j] << endl;
-    //     }
-    // }
+    for (i = 0; i < 26; i++)
+    {
+        H[i] = 0;
+    }
+    for (i = 0; a[i] != '\0'; i++)
+    {
+        H[a[i] - 97]++;
+    }
+    cout << endl;
+    for (i = 0; i < 26; i++)
+    {
+        if (H[i] > 1)
+        {
+            cout << i + 97;
+            cout << "-> " << H[i] << endl;
+        }
+    }
 
     return 0;
 }

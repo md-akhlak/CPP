@@ -65,8 +65,23 @@ public:
     // using hasing : gives time complexity O(n)
     void Method_2()
     {
+        int k;
         int *H;
+        cout<<"Enter k";
+        cin>>k;
         H = new int[size];
+        int i;
+        for (i = 0; i < size; i++)
+        {
+            H[size] = 0;
+        }
+        for (i = 0; i < size; i++)
+        {
+            if (H[k - A[i]] != 0)
+            {
+                cout << A[i] << " + " << k - A[i] << " = " << k<<endl;
+            }
+        }
     }
 };
 
@@ -76,7 +91,8 @@ int main()
     PairOfSum obj;
     obj.Create();
     obj.Display();
-    obj.Sum_K();
+    // obj.Sum_K();
+    obj.Method_2();
 
     return 0;
 }

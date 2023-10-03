@@ -65,6 +65,10 @@ public:
         int *H;
         int max = A[length - 1];
         H = new int[size];
+        for (int i = 0; i < max; i++)
+        {
+            H[i] = 0;
+        }
         for (int i = 0; i < length; i++)
         {
             H[A[i]]++;
@@ -73,7 +77,7 @@ public:
         {
             if (H[i] > 1)
             {
-                cout << i << H[i] << " ";
+                cout << i << " -> " << H[i] << endl;
             }
         }
     }
@@ -122,10 +126,10 @@ int main()
     Duplicates obj;
     obj.Create();
     obj.Display();
-    obj.unSortedDuplicates();
-    // obj.findDuplicatesUseHashing();
+    // obj.unSortedDuplicates();
+    obj.findDuplicatesUseHashing();
     // obj.findingDuplicates();
-    // obj.countingDuplicates();
+    obj.countingDuplicates();
 
     return 0;
 }

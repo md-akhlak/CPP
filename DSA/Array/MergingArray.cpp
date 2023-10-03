@@ -121,10 +121,12 @@
 //     return 0;
 // }
 
+
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
+// using class 
 class ARRAY
 {
 private:
@@ -213,7 +215,7 @@ public:
         return *arr3;
     }
 };
-
+// using structure 
 struct Array
 {
     int size;

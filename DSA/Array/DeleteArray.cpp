@@ -39,15 +39,7 @@ public:
             return x;
         }
     }
-    void DisplayDelete()
-    {
-        cout << "Displaying class Array Ater Deleting Eslement : " << endl;
-        for (int i = 0; i < length; i++)
-        {
-            cout << A[i] << " ";
-        }
-        cout << endl;
-    }
+
     ~classArray()
     {
         delete[] A;
@@ -74,7 +66,8 @@ int main()
 
     Arr.Display();
     Arr.Delete(&Arr);
-    Arr.DisplayDelete();
+    Arr.Display();
+
 
     delete[] Arr.A;
 

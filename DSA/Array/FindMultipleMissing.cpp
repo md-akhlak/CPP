@@ -69,19 +69,24 @@ public:
         int low = A[0];
         int *H;
         int high = A[length - 1];
-        cout << high << endl;
 
         H = new int[high];
-        cout << sizeof(H);
+
+        for (int i = 0; i < size; i++)
+        {
+            H[i] = 0;
+        }
+
         for (int i = 0; i < length; i++)
         {
             H[A[i]]++;
         }
+
         for (int i = low; i <= *H; i++)
         {
             if (H[i] == 0)
             {
-                cout << i;
+                cout << i << ",";
             }
         }
     }
@@ -91,9 +96,9 @@ int main()
 {
     MultipleMissing arr;
     arr.Create();
-    // arr.Menthod_1();
     arr.Display();
-    arr.Method_2();
+    arr.Menthod_1();
+    arr.Display();
 
     return 0;
 }

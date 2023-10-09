@@ -136,9 +136,8 @@ int main()
     arr3 = Differene(&arr1, &arr2);
     Display(*arr3);
 
-    delete []arr1.A;
-    delete []arr2.A;
-    delete []arr3->A;
+    delete[] arr1.A;
+    delete[] arr2.A;
+    delete[] arr3->A;
     return 0;
-
 }

@@ -22,7 +22,7 @@ public:
         }
         cout << endl;
     }
-    int LinearSearch(classArray arr , int key)
+    int LinearSearch(classArray arr, int key)
     {
         for (int i = 0; i < arr.length; i++)
         {
@@ -89,7 +89,7 @@ int main()
     cout << "Enter the Key Element you want to  find : ";
     cin >> keyElelment;
 
-    cout<<endl;
+    cout << endl;
     // cout << Arr.LinearSearch(Arr , keyElelment);
     // cout<<endl;
     // Arr.Display(Arr);

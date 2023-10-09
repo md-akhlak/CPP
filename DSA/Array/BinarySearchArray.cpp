@@ -106,7 +106,7 @@ int main()
     int keyElelment;
     cout << "enter size of an Array : ";
     cin >> Arr.size;
-    
+
     Arr.A = new int[Arr.size];
     Arr.length = 0;
 

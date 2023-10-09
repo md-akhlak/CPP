@@ -43,7 +43,7 @@ void FUNCT_A(int o)
 {
     if (o > 1)
     {
-        cout<<" " << o << " ";
+        cout << " " << o << " ";
         FUNCT_B(o - 1);
     }
 }
@@ -51,7 +51,7 @@ void FUNCT_B(int o)
 {
     if (o > 0)
     {
-        cout<<" " << o << " ";
+        cout << " " << o << " ";
         FUNCT_A(o / 2);
     }
 }

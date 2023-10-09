@@ -171,15 +171,18 @@
 //     delete[] p;
 //     return 0;
 // }
-#include<iostream>
+#include <iostream>
 using namespace std;
-struct rect{
+struct rect
+{
     int l, b;
 };
-int area(rect r1){
-    return r1.l*r1.b;
+int area(rect r1)
+{
+    return r1.l * r1.b;
 }
-int main(){
+int main()
+{
     rect r;
     r.b = 5;
     r.l = 10;

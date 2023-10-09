@@ -59,7 +59,6 @@ struct StructOperation
             revobj->A[i] = B[i];
         }
     }
-
 };
 
 int main()
@@ -78,14 +77,13 @@ int main()
 
     obj_1.CreateElement(obj_1);
 
-
     obj_1.DisplayArr(obj_1);
     // method 1
     obj_1.ReversingArray(&obj_1);
     obj_1.DisplayArr(obj_1);
-    
+
     cout << endl;
-//  method 2
+    //  method 2
     obj_1.Reverse(&obj_1);
     obj_1.DisplayArr(obj_1);
 

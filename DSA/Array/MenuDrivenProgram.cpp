@@ -309,7 +309,7 @@ int main()
         case 8:
             cout << "Enter the size of an array :";
             cin >> arr.size;
-            arr.length = 0; 
+            arr.length = 0;
             struct MenuDriven arr2;
 
             arr.A = (int *)malloc(arr.size * sizeof(int));
@@ -342,6 +342,6 @@ int main()
     } while (choice < 9);
 
     free(arr.A);
-    delete []arr.A;
+    delete[] arr.A;
     return 0;
 }

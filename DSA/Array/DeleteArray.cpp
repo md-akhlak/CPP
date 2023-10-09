@@ -68,7 +68,6 @@ int main()
     Arr.Delete(&Arr);
     Arr.Display();
 
-
     delete[] Arr.A;
 
     return 0;

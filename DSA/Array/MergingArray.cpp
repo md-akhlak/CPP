@@ -121,12 +121,11 @@
 //     return 0;
 // }
 
-
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
-// using class 
+// using class
 class ARRAY
 {
 private:
@@ -182,7 +181,7 @@ public:
         {
             cout << A[i] << " ";
         }
-        cout<<endl;
+        cout << endl;
     }
     ARRAY MERGEING(ARRAY ar1, ARRAY ar2)
     {
@@ -215,7 +214,7 @@ public:
         return *arr3;
     }
 };
-// using structure 
+// using structure
 struct Array
 {
     int size;
@@ -278,7 +277,6 @@ int main()
     arr2.DISPLAY();
     obj.MERGEING(arr1, arr2);
     obj.DISPLAY();
-
 
     return 0;
 }

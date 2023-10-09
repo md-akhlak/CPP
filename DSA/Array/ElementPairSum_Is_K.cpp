@@ -67,8 +67,8 @@ public:
     {
         int k;
         int *H;
-        cout<<"Enter k";
-        cin>>k;
+        cout << "Enter k";
+        cin >> k;
         H = new int[size];
         int i;
         for (i = 0; i < size; i++)
@@ -79,7 +79,7 @@ public:
         {
             if (H[k - A[i]] != 0)
             {
-                cout << A[i] << " + " << k - A[i] << " = " << k<<endl;
+                cout << A[i] << " + " << k - A[i] << " = " << k << endl;
             }
         }
     }

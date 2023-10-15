@@ -6,14 +6,14 @@ struct Diagonal
     int A[10];
     int n;
 };
-void Set(Diagonal *m, int i, int j, int k)
+void Set(struct Diagonal *m, int i, int j, int k)
 {
     if (i == j)
     {
         m->A[i - 1] = k;
     }
 }
-int Get(Diagonal m, int i, int j)
+int Get(struct Diagonal m, int i, int j)
 {
     if (i == j)
     {
@@ -24,7 +24,7 @@ int Get(Diagonal m, int i, int j)
         return 0;
     }
 }
-void Display(Diagonal m)
+void Display(struct Diagonal m)
 {
     int i, j;
     for (i = 0; i < m.n; i++)
@@ -33,7 +33,7 @@ void Display(Diagonal m)
         {
             if (i == j)
             {
-                cout << m.A[i]<<" ";
+                cout << m.A[i] << " ";
             }
             else
             {

@@ -121,6 +121,8 @@ int main()
     Display(obj);
     cout << "Element : " << Get(obj, 2, 2);
 
+// ****************************
+
     cout << endl;
     cout << "Using Classes" << endl;
     DiagonalMatrix ob(4);

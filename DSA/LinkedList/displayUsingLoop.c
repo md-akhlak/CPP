@@ -18,6 +18,10 @@ void create(int A[], int n)
 
     first->data = A[0];
     first->next = NULL;
+
+
+
+
     last = first;
 
     for (i = 1; i < n; i++)
@@ -39,6 +43,7 @@ void display(struct Node *p)
     }
 }
 // time complexity : o(n);
+// space complexity : o(n)
 
 int main()
 {

@@ -6,19 +6,14 @@ struct Node
     int data;
     struct Node *next;
 
-}*first = NULL;
-
-
+} *first = NULL;
 
 void create(int A[], int n)
 {
     int i;
 
-
-
     struct Node *t, *last;
 
-    
     first = (struct Node *)malloc(sizeof(struct Node));
 
     first->data = A[0];
@@ -57,11 +52,10 @@ void recusiveDisplayFirst(struct Node *p)
 // time complexity : o(n);
 // space complexity : o(n)
 
-
 int main()
 {
 
-    int A[] = {2,12,4,5,7,56,12,4,6};
+    int A[] = {2, 12, 4, 5, 7, 56, 12, 4, 6};
 
     create(A, 9);
     recusiveDisplay(first); // display in normal order

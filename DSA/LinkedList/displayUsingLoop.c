@@ -8,8 +8,6 @@ struct Node
 
 } *first = NULL;
 
-
-
 void create(int A[], int n)
 {
     int i;
@@ -18,9 +16,6 @@ void create(int A[], int n)
 
     first->data = A[0];
     first->next = NULL;
-
-
-
 
     last = first;
 
@@ -43,11 +38,10 @@ void display(struct Node *p)
     }
 }
 // time complexity : o(n);
-// space complexity : o(n)
 
 int main()
 {
-    
+
     int A[] = {3, 5, 7, 10, 25, 8, 32, 2};
     create(A, 8);
     display(first);

@@ -41,8 +41,6 @@ void recusiveDisplay(struct Node *p)
 // time complexity : o(n);
 // space complexity : o(n)
 
-
-
 // it will print the linked list in reverse order
 void recusiveDisplayFirst(struct Node *p)
 {

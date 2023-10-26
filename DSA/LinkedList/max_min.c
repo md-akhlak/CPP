@@ -37,7 +37,7 @@ void display(struct Node *p)
         p = p->next;
     }
 }
-// Fingi Max element in the linked list
+// Finding Max element in the linked list
 int maxNumber(struct Node *p)
 {
     /* The line `int max = __INT64_MAX__;` is initializing the variable `max` with the maximum value

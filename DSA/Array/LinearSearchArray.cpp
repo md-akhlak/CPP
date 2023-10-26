@@ -4,15 +4,19 @@ using namespace std;
 class classArray
 {
 private:
+
 public:
     int *A;
     int size;
     int length = 0;
+
     classArray() {}
+
     classArray(int s)
     {
         this->size = s;
     }
+
     void Display(classArray Arr)
     {
         cout << "Displaying class Array is : " << endl;
@@ -22,6 +26,7 @@ public:
         }
         cout << endl;
     }
+
     int LinearSearch(classArray arr, int key)
     {
         for (int i = 0; i < arr.length; i++)
@@ -31,6 +36,7 @@ public:
         }
         return -1;
     }
+
     void swap(int *x, int *y)
     {
         int temp;
@@ -38,6 +44,7 @@ public:
         *x = *y;
         *y = temp;
     }
+
     int TranspostionLinearSearch(classArray *arr, int key)
     {
         for (int i = 0; i < arr->length; i++)
@@ -50,18 +57,20 @@ public:
             return -1;
         }
     }
-    // int MoveToHeadLinearSearch(classArray *arr, int key)
-    // {
-    //     for (int i = 0; i < arr->length; i++)
-    //     {
-    //         if (key == arr->A[i])
-    //         {
-    //             swap(&arr->A[i], &arr->A[0]);
-    //             return i;
-    //         }
-    //     }
-    //     return -1;
-    // }
+
+    int MoveToHeadLinearSearch(classArray *arr, int key)
+    {
+        for (int i = 0; i < arr->length; i++)
+        {
+            if (key == arr->A[i])
+            {
+                swap(&arr->A[i], &arr->A[0]);
+                return i;
+            }
+        }
+        return -1;
+    }
+
     ~classArray()
     {
         delete[] A;

@@ -43,7 +43,7 @@ int sumOfLinkedList(struct Node *p)
     int sum = 0;
     while (p != NULL)
     {
-        sum += p->data;
+        sum = sum + p->data;
         p = p->next;
     }
     return sum;

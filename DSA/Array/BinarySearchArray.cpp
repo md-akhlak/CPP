@@ -48,7 +48,7 @@ public:
         int mid;
         if (low <= high)
         {
-            mid = (low + high) / 2;
+            mid = low + (high - low) / 2;
             if (keyEelement == a[mid])
                 return mid;
             else if (keyEelement < a[mid])
